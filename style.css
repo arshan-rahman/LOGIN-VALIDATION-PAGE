@@ -1,0 +1,158 @@
+html { 
+    background: url(back1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .container 		{ 
+    font-family: 'Cormorant Garamond', serif;
+    width:150px; 
+    border-radius: 25px;
+    margin:30px auto 0; 
+    display:block; 
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(5px);
+    padding:50px 200px 50px;
+    top: -10px;
+  }
+
+  h1{
+    font-family: 'Cormorant Garamond', serif;
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    width:100px; 
+    margin:30px auto 0; 
+    display:block; 
+    padding:25px 100px 25px;
+    top: -10px;
+    
+  }
+  h2 		 { 
+    font-family: 'Cormorant Garamond', serif;
+    text-align:center; 
+    margin-bottom:50px; 
+  }
+  h2 small { 
+    font-weight:normal; 
+    color:#888; 
+    display:block; 
+  }
+  .group{ 
+    
+    position:relative; 
+    margin-bottom:40px;
+    right: 25%; 
+  }
+  input{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+
+  input:focus{ 
+    outline:none;
+  }
+  
+  .black-input {
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(15px);  
+    color: white;
+    border-radius: 15px;                
+    padding: 8px;
+}
+
+/* Placeholder color (if you add placeholder later) */
+.black-input::placeholder {
+    color: white;
+}
+
+/* Remove blue outline on focus (optional) */
+.black-input:focus {
+    outline: none;
+    background-color: rgb(0 0 0 / 75%);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 5px white;
+}
+  
+  label 				 {
+    background : none; 
+    color: black;
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:10px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  
+  input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-weight:bolder;
+    font-size:18px;
+     background: none;
+    color:#000000;
+  }
+/* Optional focus effect */
+.black-input:focus {
+    background-color: rgb(0 0 0 / 75%);
+    backdrop-filter: blur(15px);
+    outline: none;
+    box-shadow: 0 0 5px white;
+}
+  body:before{
+    content:'';
+    height:10%;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  button{
+    background-color: rgb(0 0 0 / 100%);
+    backdrop-filter: blur(75px);
+    color:#ffffff;
+    border:none;
+    border-radius: 15px;
+    position:relative;
+    height:50px;
+    width:200px;
+    font-size:1.6em;
+    top:25%;
+    padding:.1em;
+    font-family: 'Cormorant Garamond', serif;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  button:hover{
+        background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(50px);
+    color:#000000;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: none;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
